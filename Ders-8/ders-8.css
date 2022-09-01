@@ -1,0 +1,8 @@
+* {
+    color: aqua;
+}
+/* Bütün Etiketlere Özellik vermek için kullanılır */
+
+div * {
+    font-size: 20px;
+}

@@ -1,0 +1,134 @@
+* {
+    font-size: large;
+}
+
+
+h3, span, strong, .paragraf, #has4 {
+    color: saddlebrown;
+}
+
+.box .bold {
+    font-size: 20px;
+}
+
+p > b {
+    color: blue;
+}
+/* Direct Child */
+
+p > i {
+    color: red;
+}
+/* > is for direct child */
+
+h1 + p {
+    color: powderblue;
+}
+div + p span {
+    color: navy;
+}
+
+.notabox + p span + em{
+    color: greenyellow;
+}
+/* after this element
+msut be in the same line!!! */
+
+div h2 ~ p {
+    color: red;
+}
+/* ondan sonraki hepsini kapsar ~ (alt gr + ü + space)*/
+
+div ul li.list2 ~ li {
+    color: yellow;
+}
+
+.ten p abbr[title] {
+    color: blue;
+}
+/* attributes go in "[]"*/
+
+.ten img[alt] {
+    background:seashell;
+}
+.ten img[height] {
+    background: blue;
+}
+
+
+
+.fifteen a[target="_blank"] {
+    color: teal;
+}
+
+.fifteen img[alt=İmage] {
+    background: saddlebrown;
+}
+
+.fifteen img[width=200] {
+    background: powderblue;
+}
+
+
+
+.sixteen img[alt~=html] {
+    background: lime;
+}
+/* "~" = "It should contain the word of" (= "") */
+
+
+
+.seventeen div[class|="box"] {
+    background: yellow;
+}
+/* Class name should be start with "box"
+It has an "|" aftter the class attribute */
+
+
+
+.eighteen div[class^="box"] {
+    background-color: firebrick;
+}
+/* It should contain the LETTERS of "box" at the start of the class name */
+
+
+
+.nineteen div[class$="box"] {
+    background-color: aqua;
+}
+/* It should contain the LETTERS of "box" at the end of the class name */
+
+
+
+.twenty div[class*="title"] {
+    background-color: slateblue;
+}
+/* It should contain the word of "title" wherever in the class name */
+
+
+
+.twentyone div[class*="title" i] {
+    background-color: deepskyblue;
+}
+/* i ignores CAPS and searches the wanted syntax */
+
+
+
+.twentytwo {
+    background-color: green;
+}
+
+.twentytwo div::after {
+    content: 'after text';
+    color: red;
+    background-color: bisque;
+}
+/* after text is cannot hoverable */
+
+
+
+.twentytwo div::before {
+    content: 'before text';
+    color: lightblue;
+    background-color: palegoldenrod;
+}

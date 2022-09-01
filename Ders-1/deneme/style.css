@@ -1,3 +1,24 @@
 body {
     background-color: purple;
 }
+
+h4 {
+    color: pink;
+}
+/* Bütün h4 etiketlernin özelliğini değiştirir */
+
+#enSon {
+    color: chartreuse;
+}
+/* ID etiketi "#" ile çağırılır */
+
+.mavi-arkaplan {
+    color: blue;
+}
+/* Bütün mavi-arkaplan class'ına sahip olan etiketlernin özelliğini değiştirir */
+
+.text-big {
+    font-size: 20px;
+}
+/* .color-blue.text-size */ /* Bu iki class'a da sahip olan elementi getirir  */ 
+/* class elementinden sonra id tagı da gelebilir. */
